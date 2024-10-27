@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello interval</title>
+</head>
+<body>
+    <h1> what time is it?</h1>
+    <p id="time"></p>
+    <script>
+       let timeElement = document.querySelector('#time')
+      setInterval(()=>{
+        let data = Date()
+        timeElement.innerHTML = data
+      }, 1000)
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Where is ISS</title>
+
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+              integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+              crossorigin=""/>
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+                integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+                crossorigin=""></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+      <!--our script will be loaded last after everything loaded  and that why we use the async defer-->
+        <script async defer src="fetch.js"></script>
+
+
+</head>
+<body>
+<!--let's organize our webpage here -->
+
+    <h1>Where is ISS</h1>
+
+    <div>
+
+      <p id="time"></p>
+      <p>ISS Latitude: <span id="iss-lat"></span></p>
+      <p>ISS Longitude: <span id="iss-long"></span></p>
+
+    </div>
+
+<!--add a div element for our map -->
+
+    <div id="iss-map"></div>
+
+    <p>Icon by iss by Viktor Korobkov from Noun Project (CC BY 3.0)</p>
+
+
+</body>
+</html>
